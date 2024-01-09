@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Prawn Crab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card" style="background-image: url('page_background.png')">
+
+        <label id="money" class="money">Money: 100🧧</label><br><br><br>
+        <table id="board" style="height: 50%">
+            <tr>
+                <td>            
+                    <button id="bet1" onclick=" Beton1()">
+                        <img src="dice_images/1.png" alt="">
+                    </button>
+                </td>
+                <td>
+                    <button id="bet2" onclick=" Beton2()">
+                        <img src="dice_images/2.png" alt="">
+                    </button>
+                </td>
+                <td>
+                    <button id="bet3" onclick=" Beton3()">
+                        <img src="dice_images/3.png" alt="">
+                    </button><br>
+                </td>
+            </tr>  
+            <tr>
+                <td><label id="money1" class="money">0🧧</label></td>
+                <td><label id="money2" class="money">0🧧</label></td>
+                <td><label id="money3" class="money">0🧧</label></td>
+            </tr>  
+            <tr>
+                <td>            
+                    <button id="bet4" onclick=" Beton4()">
+                        <img src="dice_images/4.png" alt="">
+                    </button>
+                </td>
+                <td>
+                    <button id="bet5" onclick=" Beton5()">
+                        <img src="dice_images/5.png" alt="">
+                    </button>
+                </td>
+                <td>
+                    <button id="bet6" onclick=" Beton6()">
+                        <img src="dice_images/6.png" alt="">
+                    </button><br>
+                </td>
+            </tr>  
+            <tr>
+                <td><label id="money4" class="money">0🧧</label></td>
+                <td><label id="money5" class="money">0🧧</label></td>
+                <td><label id="money6" class="money">0🧧</label></td>
+            </tr>  
+        </table>
+
+        <div id="container">
+            <button id="roll" onclick="rollDice()">Roll🎲</button>
+            <button id="replay" onclick="replay()" disabled="true">Replay🔁</button>
+            <div id="diceImages"></div>
+        </div>
+
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
